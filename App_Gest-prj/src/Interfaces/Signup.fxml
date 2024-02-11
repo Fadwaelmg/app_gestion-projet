@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="651.0" style="-fx-background-color: #7B9ACC;">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="382.0" layoutX="14.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" width="300.0">
+               <fill>
+                  <LinearGradient endX="0.8349206107003349" endY="0.6825396810259138" startX="0.1714285759698777" startY="0.18412700834728424">
+                     <stops>
+                        <Stop color="#1d8fbc" />
+                        <Stop color="#83ebdb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="289.0" layoutX="362.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" width="281.0">
+               <fill>
+                  <LinearGradient endX="0.7174602690197173" endY="0.5555555661519369" startX="0.1714285759698777" startY="0.18412700834728424">
+                     <stops>
+                        <Stop color="#ddcbf2" />
+                        <Stop color="#83aaed" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView fitHeight="82.0" fitWidth="89.0" layoutX="554.0" layoutY="7.0">
+               <image>
+                  <Image url="@../../../LOGO_WF.png" />
+               </image>
+            </ImageView>
+            <JFXTextArea fx:id="password_2" layoutX="408.0" layoutY="349.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="password" layoutX="408.0" layoutY="263.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="prenom" layoutX="69.0" layoutY="221.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="nom_utilisateur" layoutX="407.0" layoutY="184.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="nom" layoutX="69.0" layoutY="133.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="tele" layoutX="69.0" layoutY="307.0" prefHeight="42.0" prefWidth="191.0" />
+            <JFXTextArea fx:id="email" layoutX="69.0" layoutY="393.0" prefHeight="42.0" prefWidth="191.0" />
+            <Line endX="-7.0" endY="196.33331298828125" layoutX="343.0" layoutY="217.0" startX="-7.0" startY="-63.0" stroke="#66d9d3ba" />
+            <Text fill="WHITE" layoutX="32.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Téléphone">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="381.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="381.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom utilisateur">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="381.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmer le mot de passe">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btn_inscrire" buttonType="RAISED" layoutX="436.0" layoutY="445.0" onAction="#open_login" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: #fbf7f4;" text="S'inscrire" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7174602690197173" endY="0.5555555661519369" startX="0.1714285759698777" startY="0.18412700834728424">
+                     <stops>
+                        <Stop color="#9576b7" />
+                        <Stop color="#477acc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="122.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crée un nouveaux compte sur WIFA">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Text>
+            <Circle fill="#6991b8b4" layoutX="26.0" layoutY="26.0" radius="17.0" stroke="TRANSPARENT" strokeType="OUTSIDE" />
+            <JFXButton prefHeight="27.0" prefWidth="26.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

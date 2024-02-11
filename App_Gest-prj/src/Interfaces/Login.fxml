@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="428.0" prefWidth="485.0" style="-fx-background-color: #6c9a8b;">
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="158.0" layoutX="327.0">
+               <image>
+                  <Image url="@../../../LOGO_WF.png" />
+               </image>
+            </ImageView>
+            <JFXTextArea fx:id="nom" layoutX="66.0" layoutY="151.0" prefHeight="40.0" prefWidth="210.0" />
+            <JFXTextArea fx:id="password" layoutX="171.0" layoutY="250.0" prefHeight="40.0" prefWidth="210.0" />
+            <Text fill="WHITE" layoutX="21.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur" wrappingWidth="149.00000020861626">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="109.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" wrappingWidth="122.201904296875">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="22.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btn_connecte" buttonType="RAISED" layoutX="303.0" layoutY="317.0" onAction="#open_accueil" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: #fbf7f4;" text="Se connecter" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <Ellipse fill="#50659685" layoutY="14.0" radiusX="74.0" radiusY="70.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#dce0eb85" layoutX="88.0" layoutY="14.0" radiusX="39.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#91b6ff85" layoutX="74.0" layoutY="65.0" radiusX="39.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#f1aefd85" layoutX="27.0" layoutY="92.0" radiusX="39.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#91b6ff85" layoutY="317.0" radiusX="79.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#f1aefd85" layoutX="57.0" layoutY="255.0" radiusX="30.0" radiusY="30.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#dce0eb85" layoutX="49.0" layoutY="383.0" radiusX="30.0" radiusY="30.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Ellipse fill="#38f2a58d" layoutX="88.0" layoutY="323.0" radiusX="30.0" radiusY="30.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <JFXButton fx:id="btn_inscrire" buttonType="RAISED" layoutX="134.0" layoutY="367.0" onAction="#open_Signup" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: #fbf7f4;" text="S'inscrire" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
