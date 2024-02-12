@@ -1,0 +1,4 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.liste_projet{
+    -fx-background-color: linear-gradient(90deg, rgba(57, 210, 248, 1), rgba(48, 97, 96, 1));
+}

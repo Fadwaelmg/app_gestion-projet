@@ -1,8 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane prefHeight="424.0" prefWidth="474.0" style="-fx-background-color: #176B87;">
+         <children>
+            <FontAwesomeIconView glyphName="FOLDER_OPEN_ALT" layoutX="214.0" layoutY="361.0" rotate="-24.9" size="200" text="" wrappingWidth="221.77198934555054">
+               <fill>
+                  <LinearGradient endX="0.6666666666666666" endY="0.657142820812407" startX="0.3968254134768532" startY="0.2603174118768601">
+                     <stops>
+                        <Stop color="#55a5b6" />
+                        <Stop color="#223d87" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="FOLDER_OPEN_ALT" layoutX="-13.0" layoutY="178.0" rotate="-14.0" size="200" text="" wrappingWidth="221.77198934555054">
+               <fill>
+                  <LinearGradient endX="0.6666666666666666" endY="0.657142820812407" startX="0.3968254134768532" startY="0.2603174118768601">
+                     <stops>
+                        <Stop color="#55a5b6" />
+                        <Stop color="#223d87" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIconView>
+            <TextField fx:id="nom_projet" layoutX="269.0" layoutY="66.0" promptText="Nom" />
+            <TextField fx:id="nb_tache" layoutX="269.0" layoutY="126.0" prefHeight="25.0" prefWidth="106.0" promptText="0" />
+            <TextField fx:id="nb_personne" layoutX="269.0" layoutY="299.0" prefHeight="25.0" prefWidth="85.0" promptText="0" />
+            <JFXDatePicker fx:id="date_debut" layoutX="269.0" layoutY="181.0" promptText="00/00/0000" style="-fx-background-color: #ffffff51;">
+               <defaultColor>
+                  <LinearGradient endX="0.6984126499720982" endY="0.546031733921596" startX="0.33333333787463965">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </defaultColor>
+            </JFXDatePicker>
+            <JFXButton fx:id="btn_cree" layoutX="325.0" layoutY="377.0" onAction="#open_Cree_projet" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #EEF5FF;" text="Créer le projet">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.2698412032354445" endY="0.6666666666666666" startX="0.6190475872584752" startY="0.24761904761904766">
+                     <stops>
+                        <Stop color="#3a9d99" />
+                        <Stop color="#8571f4" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </JFXButton>
+            <JFXButton fx:id="btn_annul" layoutX="197.0" layoutY="377.0" onAction="#open_accueil" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #EEF5FF;" text="Annuler">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.2698412032354445" endY="0.6666666666666666" startX="0.6190475872584752" startY="0.24761904761904766">
+                     <stops>
+                        <Stop color="#3a9d99" />
+                        <Stop color="#8571f4" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="35.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de projet ">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre des tâches">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de début ">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de fin ">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="35.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre des personnes">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Text>
+            <JFXDatePicker fx:id="date_fin" layoutX="269.0" layoutY="231.0" promptText="00/00/0000" style="-fx-background-color: #ffffff53;">
+               <defaultColor>
+                  <LinearGradient endX="0.6984126499720982" endY="0.546031733921596" startX="0.33333333787463965">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </defaultColor>
+            </JFXDatePicker>
+            <FontAwesomeIconView glyphName="FOLDER" layoutX="427.0" layoutY="88.0" size="28">
+               <fill>
+                  <LinearGradient endX="0.2698412032354445" endY="0.6666666666666666" startX="0.6190475872584752">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIconView>
+            <MaterialDesignIconView glyphName="ACCOUNT_MULTIPLE" layoutX="368.0" layoutY="322.0" size="28">
+               <fill>
+                  <LinearGradient endX="0.6984126499720982" endY="0.546031733921596" startX="0.33333333787463965">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </MaterialDesignIconView>
+            <MaterialIconView glyphName="EVENT_AVAILABLE" layoutX="382.0" layoutY="152.0" size="28">
+               <fill>
+                  <LinearGradient endX="0.6984126499720982" endY="0.546031733921596" startX="0.33333333787463965">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </MaterialIconView>
+            <Text layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créer Nouveaux  projet">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="32.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.6984126499720982" endY="0.546031733921596" startX="0.33333333787463965">
+                     <stops>
+                        <Stop color="#0dccff" />
+                        <Stop color="#f3daf6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-

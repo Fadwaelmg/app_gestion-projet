@@ -30,9 +30,17 @@ public class SignupController<JFXTextArea, JFXButton> implements Initializable{
 
     @FXML
     private JFXButton btn_inscrire;
+    
+    @FXML
+    private JFXButton btn_roteur;
 
     @FXML
     void open_login() {
+
+    }
+    
+    @FXML
+    void Rotuer() {
 
     }
 
