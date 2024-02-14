@@ -1,8 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="688.0" style="-fx-background-color: #12a6b1;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="81.0" layoutX="603.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../LOGO_WF.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#6991b8b4" layoutX="38.0" layoutY="32.0" radius="17.0" stroke="TRANSPARENT" strokeType="OUTSIDE" />
+            <JFXButton fx:id="btn_roteur" layoutX="14.0" layoutY="7.0" onAction="#Rotuer" prefHeight="27.0" prefWidth="26.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <Pane fx:id="pan" layoutX="21.0" layoutY="106.0" prefHeight="61.0" prefWidth="585.0">
+               <children>
+                  <TextFlow fx:id="nom_projet" layoutX="72.0" layoutY="12.0" prefHeight="36.0" prefWidth="234.0" style="-fx-background-color: #FBF9F1;" textAlignment="CENTER" />
+                  <JFXButton fx:id="btn_Restaurer" layoutX="340.0" layoutY="18.0" onAction="#Restaurer" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #E2F6CA;" text="Restaurer">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.5111110959734235" endY="0.015873014359247123" startY="0.6634920392717634">
+                           <stops>
+                              <Stop color="#6214ff" />
+                              <Stop color="#04d9ff" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_ouvrire" layoutX="463.0" layoutY="18.0" onAction="#ouvrire" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #E6B9DE;" text="Ouvrir">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.21904761904761905" startX="0.7523809523809524" startY="0.9904761904761905">
+                           <stops>
+                              <Stop color="#a67c21" />
+                              <Stop color="#19b342" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </JFXButton>
+                  <TextFlow fx:id="por_total" layoutX="7.0" layoutY="18.0" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: #BFB29E;" />
+                  <Text fill="WHITE" layoutX="53.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-

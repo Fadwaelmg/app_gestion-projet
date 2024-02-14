@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="476.0" prefWidth="678.0">
+         <children>
+            <AnchorPane prefHeight="476.0" prefWidth="682.0" style="-fx-background-color: #72630b;">
+               <children>
+                  <Pane fx:id="pan" layoutX="11.0" layoutY="96.0" prefHeight="61.0" prefWidth="653.0">
+                     <children>
+                        <TextFlow fx:id="nom_projet" layoutX="72.0" layoutY="12.0" prefHeight="36.0" prefWidth="234.0" style="-fx-background-color: #FBF9F1;" textAlignment="CENTER" />
+                        <JFXButton fx:id="btn_ouvrir" buttonType="RAISED" layoutX="340.0" layoutY="18.0" onAction="#ouvrire" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #80ced7;" text="Ouvrir">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.5079364958263579" endY="0.8634921119326638" startX="0.1523809750874837" startY="0.15873006184895835">
+                                 <stops>
+                                    <Stop color="#0b9f95" />
+                                    <Stop color="#083eaa" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_annul" buttonType="RAISED" layoutX="452.0" layoutY="18.0" onAction="#annul" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #aaa1c8;" text="Relancer">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.1619047687167213" endY="0.49206346784319194" startX="1.0" startY="0.7587301345098587">
+                                 <stops>
+                                    <Stop color="#4a6254" />
+                                    <Stop color="#2679ff" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_supp" buttonType="RAISED" layoutX="560.0" layoutY="18.0" onAction="#supprimer" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #df7373;" text="Supprimer">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.319047619047619" endY="0.9904761904761905" startX="0.39682533627464656" startY="0.326984151204427">
+                                 <stops>
+                                    <Stop color="#6e5688" />
+                                    <Stop color="#880b65" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </JFXButton>
+                        <TextFlow fx:id="por_total" layoutX="7.0" layoutY="18.0" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: #BFB29E;" />
+                        <Text fill="WHITE" layoutX="53.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="71.0" fitWidth="81.0" layoutX="589.0" layoutY="6.0">
+                     <image>
+                        <Image url="@../../../LOGO_WF.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Circle fill="#6991b8b4" layoutX="42.0" layoutY="38.0" radius="17.0" stroke="TRANSPARENT" strokeType="OUTSIDE" />
+            <JFXButton fx:id="btn_roteur" layoutX="18.0" layoutY="13.0" onAction="#Rotuer" prefHeight="27.0" prefWidth="26.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-

@@ -1,5 +1,51 @@
 package controllers;
 
-public class Projet_suppController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.TextFlow;
+
+public class Projet_suppController<JFXButton>  implements Initializable{
+	 @FXML
+	    private JFXButton btn_roteur;
+
+	    @FXML
+	    private Pane pan;
+
+	    @FXML
+	    private TextFlow nom_projet;
+
+	    @FXML
+	    private JFXButton btn_Restaurer;
+
+	    @FXML
+	    private JFXButton btn_ouvrire;
+
+	    @FXML
+	    private TextFlow por_total;
+
+	    @FXML
+	    void Restaurer() {
+
+	    }
+
+	    @FXML
+	    void Rotuer() {
+
+	    }
+
+	    @FXML
+	    void ouvrire() {
+
+	    }
+
+		@Override
+		public void initialize(URL arg0, ResourceBundle arg1) {
+			
+			
+		}
 
 }

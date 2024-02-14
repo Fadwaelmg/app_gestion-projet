@@ -12,8 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="476.0" prefWidth="674.0">
          <children>
@@ -22,7 +21,7 @@
                   <Pane fx:id="pan" layoutX="11.0" layoutY="96.0" prefHeight="61.0" prefWidth="766.0">
                      <children>
                         <TextFlow fx:id="nom_projet" layoutX="72.0" layoutY="12.0" prefHeight="36.0" prefWidth="234.0" style="-fx-background-color: #FBF9F1;" textAlignment="CENTER" />
-                        <JFXButton fx:id="btn_ouvrir" layoutX="340.0" layoutY="18.0" onAction="#ouvrire" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #d8e2dc;" text="Ouvrir">
+                        <JFXButton fx:id="btn_ouvrir" buttonType="RAISED" layoutX="340.0" layoutY="18.0" onAction="#ouvrire" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #d8e2dc;" text="Ouvrir">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -35,7 +34,7 @@
                               </LinearGradient>
                            </textFill>
                         </JFXButton>
-                        <JFXButton fx:id="btn_annul" layoutX="452.0" layoutY="18.0" onAction="#annul" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #c0fdff;" text="Annuler">
+                        <JFXButton fx:id="btn_annul" buttonType="RAISED" layoutX="452.0" layoutY="18.0" onAction="#annul" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #c0fdff;" text="Annuler">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -48,15 +47,15 @@
                               </LinearGradient>
                            </textFill>
                         </JFXButton>
-                        <JFXButton fx:id="btn_supp" layoutX="560.0" layoutY="18.0" onAction="#supprimer" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #df7373;" text="Supprimer">
+                        <JFXButton fx:id="btn_supp" buttonType="RAISED" layoutX="560.0" layoutY="18.0" onAction="#supprimer" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #df7373;" text="Supprimer">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                            <textFill>
-                              <LinearGradient endX="1.0" endY="0.42539685113089426" startX="1.0" startY="1.0">
+                              <LinearGradient endX="1.0" endY="1.0" startY="0.33650796072823663">
                                  <stops>
-                                    <Stop color="WHITE" />
-                                    <Stop color="#37d0ff" offset="1.0" />
+                                    <Stop color="#532525" />
+                                    <Stop color="#2d10d0" offset="1.0" />
                                  </stops>
                               </LinearGradient>
                            </textFill>
@@ -67,7 +66,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Text>
-                        <JFXButton fx:id="btn_term" layoutX="661.0" layoutY="18.0" onAction="#terminer" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #61a5c2;" text="Terminer">
+                        <JFXButton fx:id="btn_term" buttonType="RAISED" layoutX="661.0" layoutY="18.0" onAction="#terminer" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #61a5c2;" text="Terminer">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
